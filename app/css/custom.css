@@ -3,7 +3,7 @@ Theme name: My SPA Theme
 Version: 1.0
 Template: Welcome
 */
-#451_img_prod_lg {
+.product-view-default img {
     border: 1px solid #ddd;
 }
 
