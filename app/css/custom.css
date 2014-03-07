@@ -7,6 +7,10 @@ Template: Welcome
     border: 1px solid #ddd;
 }
 
+.view-thumbnail {
+    border: 1px solid #ddd;
+}
+
 .copyright-view p:first-of-type {
     color: #000;
     background-color: #F7F6F6;
