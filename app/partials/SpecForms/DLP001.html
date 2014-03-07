@@ -18,12 +18,14 @@
             <div class="panel-body form-group">
                 <div class="view-form-icon">
                     <div class="input-group">
-                        <label>Address</label>
-                        <input class="form-control" placeholder="{{Variant.Specs.Address_1.Name}}" size="{{Variant.Specs.Address_1.Width * .13}}" ng-maxlength="{{Variant.Specs.Address_1.MaxLength}}" ui-mask="{{Variant.Specs.Address_1.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Address_1.Required}}" ng-model="Variant.Specs.Address_1.Value"></input>
+                        <label>Name</label>
+                        <input class="form-control" placeholder="{{Variant.Specs.Name.Name}}" size="{{Variant.Specs.Name.Width * .13}}" ng-maxlength="{{Variant.Specs.Name.MaxLength}}" ui-mask="{{Variant.Specs.Name.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Name.Required}}" ng-model="Variant.Specs.Name.Value"></input>
                     </div>
-
-
-            </div>
+                    <div class="input-group">
+                        <label>Title</label>
+                        <input class="form-control" placeholder="{{Variant.Specs.Title_1.Name}}" size="{{Variant.Specs.Title_1.Width * .13}}" ng-maxlength="{{Variant.Specs.Title_1.MaxLength}}" ui-mask="{{Variant.Specs.Title_1.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Title_1.Required}}" ng-model="Variant.Specs.Title_1.Value"></input>
+                    </div>
+                </div>
             <div class="panel-footer">
                 <button class="btn btn-primary pull-right" type="submit" ng-click="save()">Save</button>
             </div>
