@@ -2,12 +2,13 @@ four51.app.directive('customtextfield', function($451) {
     var obj = {
         scope: {
             customfield : '=',
-            label: '='
+            owen: '='
         },
         restrict: 'E',
         transclude: true,
         templateUrl: 'partials/controls/customTextField.html',
 	    controller: function($scope) {
+            console.log($scope.label);
 		//	if (!$scope.customfield.Value && $scope.customfield.DefaultValue)
 		//		$scope.customfield.Value = $scope.customfield.DefaultValue;
 	    }
