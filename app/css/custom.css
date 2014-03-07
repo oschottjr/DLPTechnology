@@ -3,4 +3,17 @@ Theme name: My SPA Theme
 Version: 1.0
 Template: Welcome
 */
+#451_img_prod_lg,
+.view-thumbnail {
+    border: 1px solid #ddd;
+}
 
+.copyright-view p:first-of-type {
+    color: #000;
+    background-color: #F7F6F6;
+}
+
+.copyright-view p:last-of-type {
+    color: #359FD5;
+    background-color: #F7F6F6;
+}
