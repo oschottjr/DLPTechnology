@@ -17,7 +17,7 @@
             </div>
             <div class="panel-body form-group">
                 <div class="view-form-icon">
-                    <div class="input-group" ng-if="customfield.Lines <= 1">
+                    <div class="input-group">
                         <label>Address</label>
                         <input class="form-control" placeholder="{{Variant.Specs.Address_1.Name}}" size="{{Variant.Specs.Address_1.Width * .13}}" ng-maxlength="{{Variant.Specs.Address_1.MaxLength}}" ui-mask="{{Variant.Specs.Address_1.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Address_1.Required}}" ng-model="Variant.Specs.Address_1.Value"></input>
                     </div>
