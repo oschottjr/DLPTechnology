@@ -1,8 +1,8 @@
 four51.app.directive('customtextfield', function($451) {
     var obj = {
         scope: {
-            customfield : '=',
-            owen: '='
+            customfield : '=customfield',
+            owen: '=owen'
         },
         restrict: 'E',
         transclude: true,
@@ -12,7 +12,7 @@ four51.app.directive('customtextfield', function($451) {
 		//	if (!$scope.customfield.Value && $scope.customfield.DefaultValue)
 		//		$scope.customfield.Value = $scope.customfield.DefaultValue;
 	    }
-    }
+    };
     return obj;
 });
 
