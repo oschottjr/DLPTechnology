@@ -27,11 +27,12 @@
                     </div>
                     <div class="input-group">
                         <label>Title Two</label>
-                        <input class="form-control" placeholder="Title Two" cols="{{Variant.Specs.Title_2.Width * .13}} rows={{Variant.Specs.Title_2.Lines}}" ng-maxlength="{{Variant.Specs.Title_2.MaxLength}}" ui-mask="{{Variant.Specs.Title_2.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Title_2.Required}}" ng-model="Variant.Specs.Title_2.Value"></input>
+                        <textarea class="form-control" placeholder="Title Two" cols="{{Variant.Specs.Title_2.Width * .13}} rows={{Variant.Specs.Title_2.Lines}}" ng-maxlength="{{Variant.Specs.Title_2.MaxLength}}" ui-mask="{{Variant.Specs.Title_2.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Title_2.Required}}" ng-model="Variant.Specs.Title_2.Value"></textarea>
                     </div>
                     <div class="input-group">
                         <label>Email Address</label>
-                        <textarea class="form-control" placeholder="{{Variant.Specs.Email_Address.Name}}" size="{{Variant.Specs.Email_Address.Width * .13}}" ng-maxlength="{{Variant.Specs.Email_Address.MaxLength}}" ui-mask="{{Variant.Specs.Email_Address.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Email_Address.Required}}" ng-model="Variant.Specs.Email_Address.Value"></textarea>
+                        <input class="form-control" placeholder="{{Variant.Specs.Email_Address.Name}}" size="{{Variant.Specs.Email_Address.Width * .13}}" ng-maxlength="{{Variant.Specs.Email_Address.MaxLength}}" ui-mask="{{Variant.Specs.Email_Address.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Email_Address.Required}}" ng-model="Variant.Specs.Email_Address.Value"></input>
+
                     </div>
                 </div>
             <div class="panel-footer">
