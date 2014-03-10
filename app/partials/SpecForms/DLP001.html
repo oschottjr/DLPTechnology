@@ -43,13 +43,10 @@
                         <input class="form-control" placeholder="{{Variant.Specs.Address_2.Name}}" size="{{Variant.Specs.Address_2.Width * .13}}" ng-maxlength="{{Variant.Specs.Address_2.MaxLength}}" ui-mask="{{Variant.Specs.Address_2.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Address_2.Required}}" ng-model="Variant.Specs.Address_2.Value"></input>
                     </div>
                     <div class="input-group">
-                        <label>City</label>
-                        <input class="form-control" placeholder="{{Variant.Specs.City.Name}}" size="{{Variant.Specs.City.Width * .13}}" ng-maxlength="{{Variant.Specs.City.MaxLength}}" ui-mask="{{Variant.Specs.City.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.City.Required}}" ng-model="Variant.Specs.City.Value"></input>
+                        <label>City, State Zip</label>
+                        <input class="form-control" placeholder="{{Variant.Specs.City.Name}}" size="{{Variant.Specs.City.Width * .13}}" ng-maxlength="{{Variant.Specs.City.MaxLength}}" ui-mask="{{Variant.Specs.City.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.City.Required}}" ng-model="Variant.Specs.City.Value"></input><input class="form-control" placeholder="{{Variant.Specs.State.Name}}" size="{{Variant.Specs.State.Width * .13}}" ng-maxlength="{{Variant.Specs.State.MaxLength}}" ui-mask="{{Variant.Specs.State.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.State.Required}}" ng-model="Variant.Specs.State.Value"></input><input class="form-control" placeholder="{{Variant.Specs.Zip.Name}}" size="{{Variant.Specs.Zip.Width * .13}}" ng-maxlength="{{Variant.Specs.Zip.MaxLength}}" ui-mask="{{Variant.Specs.Zip.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Zip.Required}}" ng-model="Variant.Specs.Zip.Value"></input>
                     </div>
-                    <div class="input-group">
-                        <label>State</label>
-                        <input class="form-control" placeholder="{{Variant.Specs.State.Name}}" size="{{Variant.Specs.State.Width * .13}}" ng-maxlength="{{Variant.Specs.State.MaxLength}}" ui-mask="{{Variant.Specs.State.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.State.Required}}" ng-model="Variant.Specs.State.Value"></input>
-                    </div>
+
                 </div>
             <div class="panel-footer">
                 <button class="btn btn-primary pull-right" type="submit" ng-click="save()">Save</button>
