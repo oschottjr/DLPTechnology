@@ -15,20 +15,30 @@
             <div class="panel-heading">
                 <h3 class="panel-title"><span ng-show="Variant.PreviewUrl">Edit </span>{{Variant.ExternalID || 'Create New'}}</h3>
             </div>
-            <div class="panel-body">
-                <div id="451_list_vspec" ng-show="true">
-                    <div class="form-group" ng-repeat="s in Variant.Specs | onproperty:[{Property: 'CanSetForLineItem', Value: false}, {Property: 'DefinesVariant', Value: false}]">
-                            <customfilefield customfield="s" ng-if="s.ControlType == 'File'"></customfilefield>
-                            <customtextfield customfield="s" ng-if="s.ControlType == 'Text'"></customtextfield>
-                            <customselectionfield customfield="s" ng-if="s.ControlType == 'Selection'" class="row"></customselectionfield>
+            <div class="panel-body form-group">
+                <div class="view-form-icon">
+                    <div class="input-group">
+                        <label>Address</label>
+                        <input class="form-control" placeholder="{{Variant.Specs.Address_1.Name}}" size="{{Variant.Specs.Address_1.Width * .13}}" ng-maxlength="{{Variant.Specs.Address_1.MaxLength}}" ui-mask="{{Variant.Specs.Address_1.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Address_1.Required}}" ng-model="Variant.Specs.Address_1.Value"></input>
+                    </div>
+                    <div class="input-group">
+                        <label>Address Line Two</label>
+                        <input class="form-control" placeholder="{{Variant.Specs.Address_2.Name}}" size="{{Variant.Specs.Address_2.Width * .13}}" ng-maxlength="{{Variant.Specs.Address_2.MaxLength}}" ui-mask="{{Variant.Specs.Address_2.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Address_2.Required}}" ng-model="Variant.Specs.Address_2.Value"></input>
+                    </div>
+                    <div class="input-group">
+                        <label>Phone Number</label>
+                        <input class="form-control" placeholder="{{Variant.Specs.Phone_1_Number.Name}}" size="{{Variant.Specs.Phone_1_Number.Width * .13}}" ng-maxlength="{{Variant.Specs.Phone_1_Number.MaxLength}}" ui-mask="{{Variant.Specs.Phone_1_Number.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Phone_1_Number.Required}}" ng-model="Variant.Specs.Phone_1_Number.Value"></input>
+                    </div>
+                    <div class="input-group">
+                        <label>Fax Number</label>
+                        <input class="form-control" placeholder="{{Variant.Specs.Phone_2_Number.Name}}" size="{{Variant.Specs.Phone_2_Number.Width * .13}}" ng-maxlength="{{Variant.Specs.Phone_2_Number.MaxLength}}" ui-mask="{{Variant.Specs.Phone_2_Number.MaskedInput}}" type="text" autocomplete="off" ng-required="{{Variant.Specs.Phone_2_Number.Required}}" ng-model="Variant.Specs.Phone_2_Number.Value"></input>
                     </div>
                 </div>
-            </div>
-            <div class="panel-footer">
-                <button class="btn btn-primary pull-right" type="submit" ng-click="save()">Save</button>
+                <div class="panel-footer">
+                    <button class="btn btn-primary pull-right" type="submit" ng-click="save()">Save</button>
+                </div>
             </div>
         </div>
-    </div>
 
 </section>
 
