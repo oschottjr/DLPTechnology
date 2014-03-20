@@ -4,11 +4,11 @@ Version: 1.0
 Template: Welcome
 */
 .product-view-default img {
-    border: 1px solid #ddd;
+    border: 10px solid #ddd;
 }
 
 .view-thumbnail {
-    border: 1px solid #ddd;
+    border: 10px solid #ddd;
 }
 
 .copyright-view p:first-of-type {
